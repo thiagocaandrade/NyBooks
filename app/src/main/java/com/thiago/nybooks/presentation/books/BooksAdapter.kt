@@ -8,7 +8,7 @@ import com.thiago.nybooks.R
 import com.thiago.nybooks.data.model.Book
 import kotlinx.android.synthetic.main.item_book.view.*
 
-class BooksAdapter(val books: List<Book>) : RecyclerView.Adapter<BooksAdapter.BooksViewHolder>() {
+class BooksAdapter(private val books: List<Book>) : RecyclerView.Adapter<BooksAdapter.BooksViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, view: Int): BooksViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.item_book, parent,false)
